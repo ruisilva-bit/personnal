@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+body{
+	background-image: url("../img/Hexagon.svg");
+    background-attachment: fixed;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*cards*/   
+
+.card{
+    width: 98vw;
+    height: 100vh;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/*nav*/
+
+nav{
+    position: fixed;
+    display: block;
+    width: 98vw;
+    height: 50px;
+}
+
+nav ul{
+    list-style: none;
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 50px;
+}
+
+nav ul li{
+    display: inline-block;
+    text-align: left;
+    width: 90px;
+}
+
+nav ul li a{
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+}
+
+nav ul li a:hover{
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    animation-name: linknav;
+    animation-duration: 0.5s;
+}
+
+@keyframes linknav {
+    100% { transform:rotate(360deg) ;}
+  }
+
+
+.topnav .icon {
+    display: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav li a{display: none;}
+    .topnav .icon {
+        margin: 2px;
+      float: left;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: absolute;}
+    .topnav.responsive .icon {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .topnav.responsive li:first-child{
+        margin-top: 30px;
+      }
+
+    .topnav.responsive li{
+        height: 30px;
+        display: block;
+        text-align: left;
+        padding: 3px;
+        margin-left: 5px;
+      }
+      
+    .topnav.responsive li a{
+        padding: 3px;
+        text-align: left;
+        position: relative;
+        display: inline;
+      }
+    }
+    
+
+    /*title*/
+
+    .title{
+      position: relative;
+      top: 60px;
+      width: 300px;
+      margin: 0 auto 0 auto;
+      text-align: center;
+    }
